@@ -1,15 +1,23 @@
 <script setup></script>
 
 <template>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <div class="main-sections">
     <section class="form-section">
       <div class="form-section-content">
         <p class="heading">Event <span>Hive</span></p>
         <p class="big-heading">Sign In to Event Hive</p>
         <form>
-          <label> YOUR EMAIL </label> <br />
+          <label> YOUR EMAIL </label>
           <input type="email" placeholder="Enter your mail" />
-          <br />
           <div class="password-container">
             <label> PASSWORD </label>
             <a>Forgot your password?</a>
@@ -37,8 +45,9 @@
 
 <style scoped lang="scss">
 .main-sections {
+  font-family: 'Open Sans';
   display: flex;
-  background-color: rgba(248, 248, 250, 1);
+  height: 100vh;
 
   .form-section {
     display: flex;
@@ -46,9 +55,12 @@
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 100%;
-    height: 675px;
-    max-width: 800px;
+    height: 100vh;
+    background-color: rgba(248, 248, 250, 1);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    // height: 675px;
+    // max-width: 800px;
 
     text-align: center;
 
@@ -84,6 +96,9 @@
 
       form {
         text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
         label {
           font-size: 16px;
@@ -111,7 +126,7 @@
           height: 46px;
           padding-left: 10px;
           border-radius: 5px;
-          margin-top: 10px;
+          // margin-top: 10px;
 
           &::placeholder {
             font-size: 12px;
@@ -136,8 +151,8 @@
         color: rgb(126, 126, 126, 1);
         font-size: 16px;
         font-weight: 400;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
 
       .signup-with-google {
@@ -158,13 +173,15 @@
 
   .image-section {
     background-image: url('/images/signin-page-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 50px;
-    width: 45%;
+    width: 30%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     // background: rgba(0, 0, 0, 0.2);
 
     .image-side-content {

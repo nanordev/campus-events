@@ -1,10 +1,20 @@
 <script setup></script>
 
 <template>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <div class="main-sections">
     <section class="image-section">
+      <!-- <img src="/images/signin-page-image.png" height="675px" width="549px" /> -->
       <div class="image-side-content">
-        <p class="welcome-message">Welcome back</p>
+        <p class="hello-message">Welcome back</p>
         <p class="sub-message">To keep connected with us, provide us with your information</p>
         <button class="signin-button">Signin</button>
       </div>
@@ -14,20 +24,14 @@
         <p class="heading">Event <span>Hive</span></p>
         <p class="big-heading">Sign Up to Event Hive</p>
         <form>
-          <div class="label-input-container">
-            <label> YOUR NAME </label>
-            <input type="text" placeholder="Enter your name" />
-          </div>
-          <div class="label-input-container">
-            <label> PASSWORD </label>
-            <input type="password" placeholder="Enter your password" />
-          </div>
-          <div class="label-input-container">
-            <label> CONFIRM PASSWORD </label>
-            <input type="password" placeholder="Enter your password" />
-          </div>
+          <label> YOUR NAME </label>
+          <input type="text" placeholder="Enter your name" />
+          <label> PASSWORD </label>
+          <input type="password" placeholder="Enter your password" />
+          <label> CONFIRM PASSWORD </label>
+          <input type="password" placeholder="Enter your password" />
         </form>
-        <button class="signin-button">Sign In</button>
+        <button class="signin-button">Sign Up</button>
         <p class="or">Or</p>
         <button class="signup-with-google">
           <img src="/images/google-logo.png" />
@@ -40,8 +44,9 @@
 
 <style scoped lang="scss">
 .main-sections {
+  font-family: 'Open Sans';
   display: flex;
-  background-color: rgba(248, 248, 250, 1);
+  height: 100vh;
 
   .form-section {
     display: flex;
@@ -49,11 +54,12 @@
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 100%;
-    height: 675px;
-    max-width: 800px;
-    padding-top: 50px;
-    // padding-bottom: 10px;
+    height: 100vh;
+    background-color: rgba(248, 248, 250, 1);
+    // padding-top: 60px;
+    // padding-bottom: 100px;
+    // height: 675px;
+    // max-width: 800px;
 
     text-align: center;
 
@@ -73,12 +79,13 @@
 
       .heading {
         font-size: 24px;
+        // margin-top: 30px;
       }
 
       .big-heading {
         font-size: 36px;
-        margin-bottom: 5px;
-        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
       }
 
       span {
@@ -89,17 +96,16 @@
 
       form {
         text-align: left;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 5px;
 
         label {
           font-size: 16px;
           color: rgba(0, 0, 0, 1);
           font-weight: 400;
-        }
-
-        a {
-          font-size: 16px;
-          font-weight: 400;
-          color: rgb(126, 126, 126, 1);
+          margin-top: 10px;
         }
 
         input {
@@ -109,16 +115,13 @@
           height: 46px;
           padding-left: 10px;
           border-radius: 5px;
-          margin-top: 10px;
+          // margin-top: 10px;
 
           &::placeholder {
             font-size: 12px;
             color: rgba(104, 124, 148, 1);
             font-weight: 400;
           }
-        }
-        .label-input-container {
-          margin-top: 25px;
         }
       }
       .signin-button {
@@ -137,8 +140,8 @@
         color: rgb(126, 126, 126, 1);
         font-size: 16px;
         font-weight: 400;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
 
       .signup-with-google {
@@ -159,13 +162,16 @@
 
   .image-section {
     background-image: url('/images/signup-page-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 50px;
-    width: 45%;
-    height: 110vh;
+    width: 30%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    // background: rgba(0, 0, 0, 0.2);
 
     .image-side-content {
       color: rgba(255, 255, 255, 1);
@@ -176,7 +182,7 @@
       text-align: center;
       gap: 40px;
 
-      .welcome-message {
+      .hello-message {
         font-size: 40px;
         font-weight: 700;
       }
