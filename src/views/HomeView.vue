@@ -232,7 +232,7 @@ body {
         color: white;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
         position: absolute;
         left: 10%;
         right: 10%;
@@ -265,7 +265,7 @@ body {
           background-color: #7848F4;
           color: white;
           border: none;
-          padding: 5px 10px;
+          padding: 8px 12px;
           border-radius: 4px;
           cursor: pointer;
         }
