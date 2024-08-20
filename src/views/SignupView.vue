@@ -228,6 +228,7 @@
 }
 
 @media only screen and (max-width: 480px) {
+  /* For mobile phones: */
   .body {
     padding-top: 20px;
     padding-bottom: 30px;
