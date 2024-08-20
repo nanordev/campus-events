@@ -141,6 +141,63 @@ footer {
       }
     }
   }
+
+  @media screen and (max-width: 481px) {
+    .subscription {
+      margin: 1.5vw 0 2vw 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      input {
+        font-size: 3vw; 
+        padding: 3vw 4vw; 
+        width: 80vw; 
+        margin-bottom: 5vw;
+      }
+
+      button {
+        background-color: #7848F4;
+        color: white;
+        border: none;
+        padding: 1vw 3vw; 
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 200vw; 
+      margin: 2vw; 
+
+      .links {
+        color: white;
+        text-decoration: none;
+        font-size: 4vw; 
+      }
+    }
+
+    hr {
+      margin: 0 2vw; 
+    }
+
+    .lower-footer {
+      padding: 7vw; 
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+
+      .social-media {
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .languages-div {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
 }
+
 
 </style>

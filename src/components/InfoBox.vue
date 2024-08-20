@@ -23,7 +23,7 @@
 <style scoped>
   .event {
     margin: 0;
-    padding: 10px;
+    padding: 2vw;
     background-color: white;
     border-radius: 8px;
     

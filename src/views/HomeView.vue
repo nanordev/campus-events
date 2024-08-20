@@ -111,7 +111,7 @@ const blogs = [
               <option value="A">Choose date and time</option>
             </select>
           </div>
-          <button><img src="/public/icons/search.png" width="20px"></button>
+          <button><img src="/public/icons/search.png" width="60%"></button>
         </div>
       </section>
 
@@ -237,7 +237,7 @@ body {
         left: 10%;
         right: 10%;
         bottom: -10%;
-        padding: 20px 40px;
+        padding: 3vw 4vw;
         border-radius: 8px;
 
         div {
@@ -249,34 +249,34 @@ body {
         }
 
         select {
-          font-size: 10px;
-          padding: 5px;
+          font-size: 1vw;
+          padding: 0.7vw;
           border-radius: 4px;
           max-width: 300px;
-          width: 100%;
+          width: 90%;
+          flex-wrap: wrap;
           
         }
 
         p {
-          font-size: 11px;
+          font-size: 1.2vw;
         }
 
         button {
           background-color: #7848F4;
           color: white;
           border: none;
-          padding: 8px 12px;
+          padding: 0.8vw 0.8vw;
           border-radius: 4px;
           cursor: pointer;
         }
       }
 
       .hero-title {
-        font-size: 28px;
+        font-size: 4vw;
         font-weight: 650;
         text-align: center;
-        margin-top: -100px;
-        
+        margin-top: -12vw;
       }
     }
 
@@ -294,12 +294,14 @@ body {
 
       .event-title {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
         
         .event-details {
           display: flex;
+          flex-wrap: wrap;
           gap: 20px;
 
           .event-combo {
@@ -412,9 +414,10 @@ body {
     }
 
     .trendz-section {
+
       .trendz-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto fill, minmax(300px, 1fr));
         gap: 10px;
       }
     }
@@ -425,6 +428,64 @@ body {
 
     .blog-section {
       margin-bottom: 10%;
+    }
+
+
+    @media screen and (min-width: 1024px) {
+      .event-grid, .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+    }
+    
+    @media screen and (min-width: 482px) {
+      .trendz-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+   
+    /* @media screen and (max-width: 280px) {
+      .search-event {
+        padding: 10px 15px;
+        align-items: stretch;
+        flex-direction: column;
+        position: static;
+        z-index: -1;
+      }
+    } */
+
+    
+
+    @media screen and (max-width: 481px) {
+      .event-grid, .blog-grid, .trendz-grid {
+        grid-template-columns: 1fr;
+        
+      }
+      .search-event {
+        padding: 10px 15px;
+        align-items: stretch;
+
+        div {
+
+          select {
+            font-size: 10px;
+            padding: 4px;
+          }
+
+          p {
+            font-size: 5px;
+          }
+
+          button {
+            padding: 10px 15px;
+          }
+        }
+      }
+
+      .create-section {
+        flex-direction: column;
+        margin-top: 20%;
+      }
     }
   }
 }
