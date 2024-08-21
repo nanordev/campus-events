@@ -1,9 +1,9 @@
 <script setup>
-import Header from '@/components/general/Header.vue';
-import Footer from '@/components/general/Footer.vue';
-import InfoBox from '@/components/InfoBox.vue';
-import TrendingCollege from '@/components/landing_page/TrendingCollege.vue';
-import LoadMore from '@/components/landing_page/LoadMore.vue';
+import Header from '@/components/general/Header.vue'
+import Footer from '@/components/general/Footer.vue'
+import InfoBox from '@/components/InfoBox.vue'
+import TrendingCollege from '@/components/landing_page/TrendingCollege.vue'
+import LoadMore from '@/components/landing_page/LoadMore.vue'
 
 const events = [
   {
@@ -82,7 +82,6 @@ const blogs = [
     location: 'ONLINE EVENT - Attend anywhere'
   }
 ]
-
 </script>
 
 <template>
@@ -111,11 +110,9 @@ const blogs = [
               <option value="A">Choose date and time</option>
             </select>
           </div>
-          <button><img src="/public/icons/search.png" width="60%"></button>
+          <button><img src="/public/icons/search.png" width="60%" /></button>
         </div>
       </section>
-
-      
 
       <section class="events-section">
         <div class="event-title">
@@ -138,12 +135,13 @@ const blogs = [
         </div>
 
         <div class="event-grid">
-          <InfoBox v-for="(event, index) in events" 
-          :key="index" 
-          :image="event.image"
-          :title="event.title"
-          :date="event.date"
-          :location="event.location"
+          <InfoBox
+            v-for="(event, index) in events"
+            :key="index"
+            :image="event.image"
+            :title="event.title"
+            :date="event.date"
+            :location="event.location"
           />
         </div>
 
@@ -152,7 +150,7 @@ const blogs = [
 
       <section class="create-section">
         <div class="image-wrapper">
-          <img src="/public/landing_images/CreateEvent.png" alt="Create Event Image">
+          <img src="/public/landing_images/CreateEvent.png" alt="Create Event Image" />
         </div>
         <div class="create-content">
           <h2>Make your own Event</h2>
@@ -164,30 +162,34 @@ const blogs = [
       <section class="brands-section">
         <div class="brands">
           <h2 class="title">Join these <span>brands</span></h2>
-          <p>We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
+          <p>
+            We've had the pleasure of working with industry-defining brands. These are just some of
+            them.
+          </p>
         </div>
         <div class="brands-logo">
-          <img src="/public/icons/spotify.png" alt="spotify logo">
-          <img src="/public/icons/google.png" alt="google logo">
-          <img src="/public/icons/stripe.png" alt="stripe logo">
-          <img src="/public/icons/youtube.png" alt="youtube logo">
-          <img src="/public/icons/microsoft.png" alt="microsoft logo">
-          <img src="/public/icons/medium.png" alt="medium logo">
-          <img src="/public/icons/zoom.png" alt="zoom logo">
-          <img src="/public/icons/uber.png" alt="uber logo">
-          <img src="/public/icons/grab.png" alt="grab logo">
+          <img src="/public/icons/spotify.png" alt="spotify logo" />
+          <img src="/public/icons/google.png" alt="google logo" />
+          <img src="/public/icons/stripe.png" alt="stripe logo" />
+          <img src="/public/icons/youtube.png" alt="youtube logo" />
+          <img src="/public/icons/microsoft.png" alt="microsoft logo" />
+          <img src="/public/icons/medium.png" alt="medium logo" />
+          <img src="/public/icons/zoom.png" alt="zoom logo" />
+          <img src="/public/icons/uber.png" alt="uber logo" />
+          <img src="/public/icons/grab.png" alt="grab logo" />
         </div>
       </section>
 
       <section class="trendz-section">
         <h2 class="title">Trending <span>Colleges</span></h2>
-        
+
         <div class="trendz-grid">
-          <TrendingCollege v-for="(trend, index) in trendz" 
-          :key="index"
-          :image="trend.image"
-          :college="trend.college"
-          :location="trend.location"
+          <TrendingCollege
+            v-for="(trend, index) in trendz"
+            :key="index"
+            :image="trend.image"
+            :college="trend.college"
+            :location="trend.location"
           />
         </div>
 
@@ -198,12 +200,14 @@ const blogs = [
         <h2 class="title">Our <span>Blogs</span></h2>
 
         <div class="event-grid">
-          <InfoBox v-for="(blog, index) in blogs" 
-          :key="index" 
-          :image="blog.image"
-          :title="blog.title"
-          :date="blog.date"
-          :location="blog.location" />
+          <InfoBox
+            v-for="(blog, index) in blogs"
+            :key="index"
+            :image="blog.image"
+            :title="blog.title"
+            :date="blog.date"
+            :location="blog.location"
+          />
         </div>
       </section>
     </main>
@@ -213,7 +217,7 @@ const blogs = [
 
 <style scoped>
 body {
-  background-color: #F8F8FA;
+  background-color: #f8f8fa;
 
   main {
     margin: 0;
@@ -224,11 +228,11 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       color: white;
-      padding: 21%; 
+      padding: 21%;
       position: relative;
 
       .search-event {
-        background-color: #10107B;
+        background-color: #10107b;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -245,7 +249,6 @@ body {
           flex-direction: column;
           flex: 1;
           margin-right: 10px;
-
         }
 
         select {
@@ -255,7 +258,6 @@ body {
           max-width: 300px;
           width: 90%;
           flex-wrap: wrap;
-          
         }
 
         p {
@@ -263,7 +265,7 @@ body {
         }
 
         button {
-          background-color: #7848F4;
+          background-color: #7848f4;
           color: white;
           border: none;
           padding: 0.8vw 0.8vw;
@@ -280,15 +282,16 @@ body {
       }
     }
 
-    .title, span {
+    .title,
+    span {
       font-weight: 650;
       color: black;
 
       span {
-        color: #7848F4;
+        color: #7848f4;
       }
-    }  
-    
+    }
+
     .events-section {
       margin: 15% 10% 10px 10%;
 
@@ -298,31 +301,32 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
-        
+
         .event-details {
           display: flex;
           flex-wrap: wrap;
           gap: 20px;
 
           .event-combo {
-            background-color:#687c941c;
+            background-color: #687c941c;
             font-size: 10px;
             padding: 6px 12px;
             border-radius: 4px;
             border: none;
           }
-        } 
+        }
       }
     }
 
-    .event-grid, .blog-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-      }
-    
+    .event-grid,
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
     .create-section {
-      background-color: #10107B;
+      background-color: #10107b;
       color: white;
       display: flex;
       align-items: center;
@@ -356,13 +360,13 @@ body {
           font-weight: bold;
           margin-bottom: 10px;
         }
-        
+
         p {
           margin-bottom: 20px;
         }
 
         button {
-          background-color: #7848F4;
+          background-color: #7848f4;
           color: white;
           border: none;
           padding: 10px 20px;
@@ -371,12 +375,11 @@ body {
         }
 
         button:hover {
-          background-color: #6039C2;
+          background-color: #6039c2;
         }
       }
-
     }
-    
+
     .brands-section {
       margin: 0 5% 50px 5%;
 
@@ -403,18 +406,16 @@ body {
         justify-content: center;
         align-items: center;
         gap: 30px;
-        
+
         img {
           max-width: 120px;
           max-height: 60px;
           object-fit: contain;
         }
       }
-
     }
 
     .trendz-section {
-
       .trendz-grid {
         display: grid;
         grid-template-columns: repeat(auto fill, minmax(300px, 1fr));
@@ -422,7 +423,8 @@ body {
       }
     }
 
-    .trendz-section, .blog-section {
+    .trendz-section,
+    .blog-section {
       margin: 0 10% 0 10%;
     }
 
@@ -430,20 +432,19 @@ body {
       margin-bottom: 10%;
     }
 
-
     @media screen and (min-width: 1024px) {
-      .event-grid, .blog-grid {
+      .event-grid,
+      .blog-grid {
         grid-template-columns: repeat(3, 1fr);
       }
-
     }
-    
+
     @media screen and (min-width: 482px) {
       .trendz-grid {
         grid-template-columns: repeat(3, 1fr);
       }
     }
-   
+
     /* @media screen and (max-width: 280px) {
       .search-event {
         padding: 10px 15px;
@@ -454,19 +455,17 @@ body {
       }
     } */
 
-    
-
     @media screen and (max-width: 481px) {
-      .event-grid, .blog-grid, .trendz-grid {
+      .event-grid,
+      .blog-grid,
+      .trendz-grid {
         grid-template-columns: 1fr;
-        
       }
       .search-event {
         padding: 10px 15px;
         align-items: stretch;
 
         div {
-
           select {
             font-size: 10px;
             padding: 4px;
