@@ -1,7 +1,7 @@
 <script setup>
 import Header from '@/components/general/Header.vue'
 import Footer from '@/components/general/Footer.vue'
-import InfoBox from '@/components/InfoBox.vue'
+import InfoBox from '@/components/general/InfoBox.vue'
 import TrendingCollege from '@/components/landing_page/TrendingCollege.vue'
 import LoadMore from '@/components/landing_page/LoadMore.vue'
 

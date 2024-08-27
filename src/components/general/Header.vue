@@ -8,7 +8,7 @@ import Logo from './Logo.vue'
     <Logo />
 
     <nav>
-      <RouterLink to="/login" class="login">Login</RouterLink>
+      <RouterLink to="/signin" class="login">Login</RouterLink>
       <RouterLink to="/signup" class="signup">Signup</RouterLink>
     </nav>
   </header>

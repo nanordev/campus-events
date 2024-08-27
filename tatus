@@ -1,0 +1,90 @@
+[33mcommit 0be9f73f53cfd7e347315a920a051ee393d3225b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32m5-develop-event-detail-eventcollege-pages[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31morigin/5-develop-event-detail-eventcollege-pages[m[33m)[m
+Merge: 08edc0a 9fa47eb
+Author: Michael Amponsah <48608838+nanordev@users.noreply.github.com>
+Date:   Wed Aug 21 09:25:43 2024 +0000
+
+    Merge pull request #4 from nanordev/1-develop-login-and-signup-pages
+    
+    1 develop login and signup pages
+
+[33mcommit 9fa47ebe8ccec2688f52e735a49f4e5c984aeb9b[m[33m ([m[1;31morigin/1-develop-login-and-signup-pages[m[33m)[m
+Merge: cc297e2 08edc0a
+Author: Michael Amponsah <dev.amponsahnanor@gmail.com>
+Date:   Wed Aug 21 09:25:02 2024 +0000
+
+    Merge branch 'develop' of github.com:nanordev/campus-events into 1-develop-login-and-signup-pages
+
+[33mcommit 08edc0a9f36cc0960e0e4634394992ebe9ee1c25[m
+Merge: db27611 db3421f
+Author: Michael Amponsah <48608838+nanordev@users.noreply.github.com>
+Date:   Wed Aug 21 09:18:09 2024 +0000
+
+    Merge pull request #3 from nanordev/2-develop-landing-page
+    
+    2 develop landing page
+
+[33mcommit db3421f1d46686cbbfd9ce9ebd7e2ab2f7e5df91[m[33m ([m[1;31morigin/2-develop-landing-page[m[33m, [m[1;32m2-develop-landing-page[m[33m)[m
+Author: HShambuck <shambuckhalifax@gmail.com>
+Date:   Tue Aug 20 16:39:09 2024 +0000
+
+    Added Hero Component
+
+[33mcommit cc297e2786ebcb65fba6baefddcb2e37fa8c458a[m
+Author: Gloria Lartey <glorialartey@gmail.com>
+Date:   Tue Aug 20 16:14:21 2024 +0000
+
+    Signup and in with mobile responsiveness
+
+[33mcommit 96001a3df2ec56d26f3bbcd016ec391faf27d72d[m
+Author: Gloria Lartey <glorialartey@gmail.com>
+Date:   Tue Aug 20 16:13:29 2024 +0000
+
+    Signup and in pages with mobile responsive ness
+
+[33mcommit 485b7fe67fd7cc2451c36c1ad1a07973133de746[m
+Author: HShambuck <shambuckhalifax@gmail.com>
+Date:   Tue Aug 20 13:51:32 2024 +0000
+
+    Fully Responsive Landing Page
+
+[33mcommit 9dda29a0b54eaaf8f625943a106e6de2ba40d13e[m
+Author: Gloria Lartey <glorialartey@gmail.com>
+Date:   Mon Aug 19 22:40:43 2024 +0000
+
+    Edited Signin and up pages
+
+[33mcommit c248ad03f8de8a72a9f97465aba0b792c5bb6e21[m
+Author: HShambuck <shambuckhalifax@gmail.com>
+Date:   Mon Aug 19 17:07:43 2024 +0000
+
+    Landing Page
+
+[33mcommit cc62b43588e99eb5d476565b9dcf07803668fde3[m
+Author: HShambuck <shambuckhalifax@gmail.com>
+Date:   Mon Aug 19 16:58:54 2024 +0000
+
+    Landing Page
+
+[33mcommit ace4a185f0692f3f10c793f2d985b388385c7f44[m
+Author: Gloria Lartey <glorialartey@gmail.com>
+Date:   Sat Aug 17 15:15:59 2024 +0000
+
+    Signup and in pages without responsiveness
+
+[33mcommit db276113e90efb882451b4acb7d5b29e9695f8d0[m
+Author: Michael Amponsah <dev.amponsahnanor@gmail.com>
+Date:   Thu Aug 15 11:40:11 2024 +0000
+
+    remove css
+
+[33mcommit a345dc95a2bfd4f253ca52c77293df85927f4ddb[m
+Author: Michael Amponsah <dev.amponsahnanor@gmail.com>
+Date:   Thu Aug 15 11:38:51 2024 +0000
+
+    remove default styles from index
+
+[33mcommit 559cbab7987c4f637c0f939d76fe3475dfc98739[m[33m ([m[1;32mdevelop[m[33m)[m
+Author: Michael Amponsah <dev.amponsahnanor@gmail.com>
+Date:   Mon Aug 12 11:59:35 2024 +0000
+
+    initialize vue app
