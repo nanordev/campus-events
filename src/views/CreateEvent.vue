@@ -64,17 +64,17 @@ import Header from '@/components/general/Header.vue'
 .body {
   background-color: rgba(248, 248, 250, 1);
   min-height: 100vh;
-  /* width: 100%; */
+  width: 100%;
 
   .main-sections {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 816px;
-    padding: 30px 16px 40px;
+    padding: 90px 16px 146px;
     margin-left: auto;
     margin-right: auto;
-    gap: 40px;
+    gap: 70px;
 
     p {
       text-align: center;
@@ -86,13 +86,19 @@ import Header from '@/components/general/Header.vue'
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: 20px;
+      gap: 33px;
       /* height: 50vh; */
 
       .form-one {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 33px;
+
+        .label-input {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
 
         label {
           font-size: 12px;
@@ -139,17 +145,17 @@ import Header from '@/components/general/Header.vue'
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: 20px;
+      gap: 40px;
 
       .form-two {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
 
         .label-input {
           display: flex;
           flex-direction: column;
-          gap: 7px;
+          gap: 10px;
 
           label {
             font-size: 12px;
@@ -163,17 +169,13 @@ import Header from '@/components/general/Header.vue'
             border: none;
             border-radius: 15px;
             padding: 10px;
-
-            /* input[type='file']::placeholder {
-              display: none;
-            } */
           }
 
           textarea {
             height: 173px;
             border: none;
             border-radius: 5px;
-            padding: 10px 10px;
+            padding: 10px;
             width: 100%;
             align-content: start;
             // vertical-align: top;
@@ -182,9 +184,6 @@ import Header from '@/components/general/Header.vue'
           textarea::placeholder {
             font-size: 12px;
             font-weight: 400;
-            color: rgba(104, 124, 148, 1);
-            // position: absolute;
-            // top: 10px;
           }
         }
 
@@ -198,7 +197,6 @@ import Header from '@/components/general/Header.vue'
           font-weight: 400;
           text-align: center;
           color: rgba(255, 255, 255, 1);
-          margin-top: 20px;
         }
       }
     }
