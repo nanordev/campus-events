@@ -11,34 +11,37 @@ import Footer from '@/components/general/Footer.vue'
       <div class="pnf-container">
         <img src="/images/page-not-found.png" alt="Page Not Found" />
       </div>
+      <div class="not-found-text">
+        <p class="title">Oops!</p>
 
-      <p class="oops-paragraph">Oops!</p>
-
-      <p class="message-paragraph">We can&apos;t seem to find the page you are looking for</p>
+        <p class="subtitle">We can&apos;t seem to find the page you are looking for</p>
+      </div>
 
       <button>Back to Homepage</button>
 
-      <p class="follow-us-paragraph">Follow us on</p>
+      <div class="socials-section">
+        <p class="title">Follow us on</p>
 
-      <div class="social-media-links">
-        <div class="link">
-          <a href=""><img src="/images/instagram-icon.png" alt="" /></a>
-        </div>
+        <div class="social-media-links">
+          <div class="link">
+            <a href=""><img src="/images/instagram-icon.png" alt="" /></a>
+          </div>
 
-        <div class="link">
-          <a href=""><img src="/images/facebook-icon.png" alt="" /></a>
-        </div>
+          <div class="link">
+            <a href=""><img src="/images/facebook-icon.png" alt="" /></a>
+          </div>
 
-        <div class="link">
-          <a href=""><img src="/images/linkedin-icon.png" alt="" /></a>
-        </div>
+          <div class="link">
+            <a href=""><img src="/images/linkedin-icon.png" alt="" /></a>
+          </div>
 
-        <div class="link">
-          <a href=""><img src="/images/twitter-icon.png" alt="" /></a>
-        </div>
+          <div class="link">
+            <a href=""><img src="/images/twitter-icon.png" alt="" /></a>
+          </div>
 
-        <div class="link">
-          <a href=""><img src="/images/youtube-icon.png" alt="" /></a>
+          <div class="link">
+            <a href=""><img src="/images/youtube-icon.png" alt="" /></a>
+          </div>
         </div>
       </div>
     </div>
@@ -47,7 +50,7 @@ import Footer from '@/components/general/Footer.vue'
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .body {
   background-color: rgba(248, 248, 250, 1);
   min-height: 100vh;
@@ -57,32 +60,40 @@ import Footer from '@/components/general/Footer.vue'
     flex-direction: column;
     width: 100%;
     max-width: 722px;
-    padding: 50px 16px;
-    gap: 20px;
+    padding: 100px 16px 118px;
+    gap: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
-    margin-top: 30px;
     align-items: center;
 
     .pnf-container {
       width: 100%;
       max-width: 722px;
-    }
+      padding: 0 16px;
 
-    .oops-paragraph {
-      font-size: 36px;
-      font-weight: 700;
-      color: rgba(0, 0, 0, 1);
-      margin-top: 50px;
+      img {
+        width: 100%;
+      }
     }
+    .not-found-text {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
 
-    .message-paragraph {
-      font-family: inter;
-      font-size: 24px;
-      font-weight: 400;
-      color: rgba(0, 0, 0, 0.5);
-      margin-top: 5px;
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .subtitle {
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.5);
+      }
     }
 
     button {
@@ -95,31 +106,56 @@ import Footer from '@/components/general/Footer.vue'
       border-radius: 30px;
       font-size: 18px;
       font-weight: 700;
-      margin-top: 50px;
+      margin-top: 61px;
     }
 
-    .follow-us-paragraph {
-      font-family: inter;
-      font-size: 18px;
-      font-weight: 400;
-      color: rgba(0, 0, 0, 1);
-      margin-top: 50px;
+    .socials-section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      text-align: center;
+      gap: 25px;
+
+      .title {
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .social-media-links {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        .link {
+          height: 45px;
+          width: 45px;
+          display: flex;
+          border-radius: 10px;
+          background-color: rgba(120, 72, 244, 0.1);
+          align-items: center;
+          justify-content: center;
+        }
+      }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .not-found-text {
+    margin-top: 62px;
+  }
+
+  .socials-section {
+    margin-top: 68px;
 
     .social-media-links {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 405px;
-
       .link {
         height: 65px;
         width: 65px;
-        display: flex;
         border-radius: 20px;
-        background-color: rgba(120, 72, 244, 0.1);
-        align-items: center;
-        justify-content: center;
       }
     }
   }
